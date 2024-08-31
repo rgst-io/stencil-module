@@ -3,8 +3,8 @@ modules:
     - name: github.com/rgst-io/stencil-golang
       url: https://github.com/rgst-io/stencil-golang
       version:
-        commit: b81af6111ff23879d56faa735c428dc2e8ff45b5
-        tag: v1.0.0
+        commit: 8766993b2553f64ed7806d8222443bf9bf7a4987
+        tag: v1.1.0
     - name: github.com/rgst-io/stencil-module
       url: ./
       version:
@@ -30,6 +30,9 @@ files:
       module: github.com/rgst-io/stencil-golang
     - name: .gitignore
       template: .gitignore.tpl
+      module: github.com/rgst-io/stencil-golang
+    - name: .golangci.yml
+      template: .golangci.yml.tpl
       module: github.com/rgst-io/stencil-golang
     - name: .goreleaser.yaml
       template: .goreleaser.yaml.tpl
