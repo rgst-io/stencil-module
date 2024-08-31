@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://stencil.rgst.io/static/manifest.jsonschema.json
+
+# This module has no configuration. To change values, look at the
+# 'stencil create' command instead.
+name: github.com/rgst-io/stencil-module
+modules:
+  - name: github.com/rgst-io/stencil-golang

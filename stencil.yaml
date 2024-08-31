@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://stencil.rgst.io/static/stencil.jsonschema.json
+name: stencil-module
+arguments:
+  org: rgst-io
+  license: Apache-2.0
+  library: true
+modules:
+  - name: github.com/rgst-io/stencil-golang
+  - name: github.com/rgst-io/stencil-module
+replacements:
+  github.com/rgst-io/stencil-module: ./
