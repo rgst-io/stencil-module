@@ -1,10 +1,10 @@
-version: 2.4.0
+version: v2.15.4-0.20260327051021-4a03839e3269+dirty
 modules:
     - name: github.com/rgst-io/stencil-golang
       url: https://github.com/rgst-io/stencil-golang
       version:
-        commit: d0b62f2c78de562b7683bfb751ff5153b0bbd165
-        tag: v1.6.1
+        commit: 2ea0f15766bfeceed18fe73eb90566bc0e536974
+        tag: v3.0.1
     - name: github.com/rgst-io/stencil-module
       url: ./
       version:
@@ -13,14 +13,17 @@ files:
     - name: .cliff.toml
       template: .cliff.toml.tpl
       module: github.com/rgst-io/stencil-golang
+    - name: .dprint.json
+      template: .dprint.json
+      module: github.com/rgst-io/stencil-golang
     - name: .editorconfig
-      template: .editorconfig.tpl
+      template: .editorconfig
       module: github.com/rgst-io/stencil-golang
     - name: .gitattributes
       template: .gitattributes.tpl
       module: github.com/rgst-io/stencil-golang
     - name: .github/scripts/get-next-version.sh
-      template: .github/scripts/get-next-version.sh.tpl
+      template: .github/scripts/get-next-version.sh
       module: github.com/rgst-io/stencil-golang
     - name: .github/settings.yml
       template: .github/settings.yml.tpl
@@ -44,16 +47,16 @@ files:
       template: .mise.toml.tpl
       module: github.com/rgst-io/stencil-golang
     - name: .mise/tasks/changelog-release
-      template: .mise/tasks/changelog-release.tpl
+      template: .mise/tasks/changelog-release
       module: github.com/rgst-io/stencil-golang
     - name: .vscode/common.code-snippets
       template: .vscode/common.code-snippets.tpl
       module: github.com/rgst-io/stencil-golang
     - name: .vscode/extensions.json
-      template: .vscode/extensions.json.tpl
+      template: .vscode/extensions.json
       module: github.com/rgst-io/stencil-golang
     - name: .vscode/settings.json
-      template: .vscode/settings.json.tpl
+      template: .vscode/settings.json
       module: github.com/rgst-io/stencil-golang
     - name: CONTRIBUTING.md
       template: CONTRIBUTING.md.tpl
@@ -70,8 +73,8 @@ files:
     - name: go.mod
       template: go.mod.tpl
       module: github.com/rgst-io/stencil-golang
-    - name: package.json
-      template: package.json.tpl
+    - name: renovate.json
+      template: renovate.json
       module: github.com/rgst-io/stencil-golang
     - name: stub.go
       template: stub.go.tpl

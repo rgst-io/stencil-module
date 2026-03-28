@@ -6,6 +6,9 @@ metadata:
   mod_timestamp: "{{ .CommitTimestamp }}"
 builds:
   - skip: true
+archives:
+  - formats:
+      - none
 checksum:
   name_template: "checksums.txt"
 snapshot:
